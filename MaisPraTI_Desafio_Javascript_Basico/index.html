@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto +PraTI/Desafio Javascript</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css"/>
+    <script type="text/javascript" src="js/script.js"></script>
+</head>
+
+<body>
+    <div id="corpo-da-pagina">
+        <div id="entrada_dados1">
+            <form>
+                <fieldset>
+                    <legend>FORMULÁRIO DE CADASTRO ESTUDANTIL</legend>
+                    <p><label>Nome do(a) Aluno(a):<input class="input-padrao" type="text" name="nome" id="nome" requerid placeholder="Insira seu nome completo"/></label></p>
+                    <p><label>Telefone:<input class="input-padrao" type="phone" name="telefone" id="telefone" requerid placeholder="Insira seu telefone"/></label></p>
+                    <p><label>Data de Nascimento:<input class="input-padrao" type="date" name="data_nascimento" id="data_nascimento" requerid placeholder="Insira sua data de nascimento"/></label></p>
+                    <p><label>Nota Final do Curso:<input class="input-padrao" type="number" name="nota_final" id="nota_final" requerid placeholder="Insira sua nota final"/></label></p>
+                    <input class="input-submit" type="submit" value="Cadastrar" onclick= "return cadastrar()">
+                </fieldset> 
+            </form>
+        </div>
+        <div><h3>Exibição dos Dados Cadastrados<h3></div>
+        <div id="saida_dados">
+            <table id="minha_tabela">
+                <tbody id="pai">
+                    <tr id="0">
+                        <th>ID Nº</th>
+                        <th>Nome Completo</th>
+                        <th>Telefone</th>
+                        <th>Data de Nascimento</th>
+                        <th>Nota Final</th>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div id="entrada_dados2">
+            <form action="#" method="POST">
+                <fieldset>
+                    <legend>EXCLUSÃO DE CADASTRO</legend>
+                    <p><label>Remover Cadastro do(a) Aluno(a) de ID nº:<input class="input-padrao" type="number" name="id_aluno" id="id_aluno" requerid placeholder="Insira o ID do(a) Aluno(a)"/><input class="input-submit" type="submit" value="Excluir" onclick= "return excluir_cadastro()"></label></p>
+                </fieldset> 
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>
